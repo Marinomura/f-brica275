@@ -10,6 +10,7 @@
 
 litro = float(input ('Quantos litros vai abastecer? '))
 combustivel = input('Digite A para Alcool ou G para gasolina: ').upper
+preco = 0
 gasolina = 2.50
 alcool = 1.90
 
@@ -17,3 +18,8 @@ if litro <=20 and combustivel == 'a':
     print((alcool*0.03)+(alcool*litro))
 elif litro >=20 and combustivel == 'a':
     print((alcool*0.05)+(alcool*litro))
+
+if litro <=20 and combustivel == 'g':
+    print((gasolina*0.03)+(alcool*litro))
+elif litro >=20 and combustivel == 'g':
+    print((gasolina*0.05)+(alcool*litro))

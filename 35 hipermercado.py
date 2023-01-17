@@ -10,14 +10,14 @@
 
 
 print ('Hoje estamos com uma promoção impredivel\n 1 Filé Duplo\n 2 Alcatra\n 3 Picanha ')
-tipo = input ("Qual será a carne hoje: ")
+tipo = int(input ("Qual será a carne hoje: "))
+
 if tipo ==1 :
-    print ("Filé Duplo")
-    
+    tipo =  ("Filé Duplo")
 if tipo ==2:
-    print ("Alcatra")
+    tipo = ("Alcatra")
 if tipo == 3:
-    print ('Picanha')
+    tipo = ('Picanha')
 
 qtdade =float(input('Quantos quilos ?'))
 resposta = int(input('A compra é realizada com cartão tabajara? 1 p/ SIM - 2 p/ NÃO: '))

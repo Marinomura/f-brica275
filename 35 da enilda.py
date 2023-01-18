@@ -31,8 +31,8 @@ elif tipo == 3:
     else:
         preco = qtdade * picanha5
     total = preco
-
-desctabajara = 0.05
+else:
+    print ('Código inválido!')
 resposta = int(input('A compra é realizada com cartão tabajara? 1 p/ SIM - 2 p/ NÃO: '))
 if resposta == 1:
     r = 'SIM'
@@ -47,5 +47,6 @@ print("\n***************************CUPOM FISCAL********************************
 print(f"* Carne.......................................................... {carne}")
 print(f"* Quantidade.....................................................{qtdade:.2f}KG")
 print(f"* Preço......................................................... R$:{total:.2f}")
-print("* Cartao Tabajara................................................ %s " % r)
-print(f"* Total com desconto............................................ R$:{total:.2f}")
+print(f"* Cartao Tabajara................................................ {r}")
+if resposta ==1:
+    print(f"* Total com desconto............................................ R$:{total:.2f}")

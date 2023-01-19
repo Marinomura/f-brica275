@@ -7,5 +7,7 @@
 #5 X 10 = 50​
 
 num = int(input('Digite qual tabuada você deseja: '))
+print('*'*20, 'TABUADA DO',num, "*"*20)
 for i in range(1,11):
     print(f'{num} x {i} = {num*i}')
+    

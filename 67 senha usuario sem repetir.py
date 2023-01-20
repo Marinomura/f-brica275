@@ -3,4 +3,5 @@
 nome= input('Digite o Nome do usuário ')
 senha= input('Digite a senha do usuário ')
 while nome ==senha:
-    print ("SENHA INVÁLIDA')
+    print('SENHA INVÁLIDA!! \n A senha deve ser diferente do usuario')
+    senha=input('Digite a senha novamente\n ')

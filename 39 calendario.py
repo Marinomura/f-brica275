@@ -1,16 +1,18 @@
 #Entrar com o dia e o mês de uma data e informar quantos dias se passaram desde o início do ano.
 #Esqueça a questão dos anos bissextos e considere sempre que um mês possui 30 dias. ​
-mes=30
-ano=365
 
-dia=input('Digite uma data: ')
-mes=input('Digite o mês desejado: ')
-inicio_ano = 2023
+dia=int(input('Digite uma data: '))
+mes=int(input('Digite o mês desejado: '))
+mes_comp=30
+ano=365
+#if mes < 1 and mes > 12:  Queria colocar pra dar erro se diferente e não rodou
+#else:
+# print ('INVALIDO')
 print('Quantos dias se passam desde o inicio do ano? ')
-calc_dia= dia 
-calc_mes = int(mes-1)*30 
+calc_dia= dia
+calc_mes = mes*30
+print (calc_dia + (calc_mes))
 print ('\n')
-print ('Data informada: ',(dia), 'de', (mes), 'de ', (inicio_ano))
-if mes != 0 or 12:
-    print ('INVALIDO')
+print ('Passaram-se ',(calc_dia + (calc_mes)), 'dias desde o inicio do ano')
+
 

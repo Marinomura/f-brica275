@@ -5,9 +5,6 @@ dia=int(input('Digite uma data: '))
 mes=int(input('Digite o mês desejado: '))
 mes_comp=30
 ano=365
-#if mes < 1 and mes > 12:  Queria colocar pra dar erro se diferente e não rodou
-#else:
-# print ('INVALIDO')
 print('Quantos dias se passam desde o inicio do ano? ')
 calc_dia= dia
 calc_mes = mes*30
